@@ -1,0 +1,207 @@
+
+
+@keyframes rgb {
+    0% {
+        color: rgb(0, 255, 34);
+    }
+    50% {
+        color: red;
+
+    }
+    100%{
+        color: blue;
+
+    }
+}
+
+@keyframes bounceit {
+
+    0% {
+        transform: translateY(0px) ;
+    }
+
+
+    50% {
+        transform: translateY(10px) ;
+
+    }
+
+    100% {
+        transform: translateY(0px) ;
+    }
+
+} 
+    
+
+
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    user-select: none;
+    height: 100vh;
+    background-image: url('../../Assets/background.JPG');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    z-index: -1;    
+
+}
+
+.home-aboutMe {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+
+
+.home-aboutMe h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 2;
+    background-color: black;
+    padding: 5px 10px;
+    border: white 2px solid;
+}
+
+
+
+.home-aboutMe span {
+    background-color: rgb(0, 0, 0);
+    border: white 2px solid;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: .7rem;
+    padding: 5px 10px;
+}
+
+.home-aboutMe p {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.home-technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    
+}
+
+
+.home-technologies .js {
+    background-image: url('../../Assets/js.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.home-technologies .mysql {
+    background-image: url('../../Assets/mysql.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
+
+.home-technologies .nodejs {
+    background-image: url('../../Assets/node-js.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+.home-technologies .express {
+    background-image: url('../../Assets/expressjs.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 1px;
+    height: 40px;
+    width: 40px;
+}
+
+
+.slide-button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    border: 4px rgb(0, 255, 51) dashed;
+    padding: 5px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.slide-button {
+    animation: bounceit .5s alternate infinite;
+    animation-delay: 2s;
+}
+
+.slide-button span{
+    text-transform: uppercase;
+    font-size: 1rem;
+    animation: rgb 1s infinite alternate ;
+    
+}
+
+.slide-button .arrow {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+
+
+
+@media (min-width:500px) {
+    .home-aboutMe h2 {
+        font-size: 3rem;
+    }
+    
+    
+    
+    .home-aboutMe span {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (min-width:768px) {
+    .home-aboutMe h2 {
+        font-size: 4rem;
+    }
+    
+    
+    
+    .home-aboutMe span {
+        font-size: 1rem;
+    }
+  
+  
+}
+
+
+
+@media (min-width:1080px) {
+
+    .home-section {
+   
+        background-size: contain;
+        background-position: top;
+    }
+  
+}

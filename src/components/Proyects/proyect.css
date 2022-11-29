@@ -1,0 +1,103 @@
+
+
+.proyects-h2 {
+    color: white;
+    font-size: 2.5rem;
+    
+}
+
+.proyects {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 40px;
+    margin: 50px 0 ;
+    border-top: 5px dashed red;
+    padding-top: 70px;
+}
+
+
+.proyect-borderShadow {
+    padding: 30px;
+    box-shadow: -41px -47px 0px -12px rgba(36,0,255,1);
+    -webkit-box-shadow: -41px -47px 0px -12px rgb(36 0 255);
+    -moz-box-shadow: -41px -47px 0px -12px rgba(36,0,255,1);
+    transition: .5s ease ;
+}
+
+
+.proyect-card {
+    flex-wrap: wrap;
+    padding: 15px;
+    box-shadow: -18px -23px 0px 11px rgba(0,255,4,1);
+    -webkit-box-shadow: -18px -23px 0px 11px rgb(0 255 4);
+    -moz-box-shadow: -18px -23px 0px 11px rgba(0,255,4,1);
+    display: flex;
+    border-top: 10px solid rgb(255, 0, 0);
+    border-left: 10px solid rgb(255, 0, 0);
+    transition: .5s ease;
+
+    
+    
+}
+
+.proyect-card .description {
+    color: white;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+
+.proyect-card .description span {
+    color: rgb(0, 255, 34);
+    font-size: .9rem;
+    
+}
+
+.proyect-card .description p {
+    color:red;
+    border-top: 2px solid blue;
+    font-size: .7rem;
+    margin-top: 10px;
+    padding: 10px 0px;
+    
+
+}
+
+.proyect-card .img-container {
+    width: 100%;
+}
+
+.proyect-card .img-container img {
+    width: 100%;
+    object-fit: conta;
+}
+
+@media (min-width:500px) {
+
+    .proyect-borderShadow:hover{
+        transform: scale(1.01);
+
+    }
+
+    .proyect-card:hover{
+        transform: scale(1.01);
+    }
+    
+    .proyect-card .description {
+        width: 40%;
+        padding: 10px;
+        
+
+    }
+
+    .proyect-card .img-container {
+        width: 60%;
+    }
+}
+
+@media (min-width:1080px) {
+    .proyects {
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}
