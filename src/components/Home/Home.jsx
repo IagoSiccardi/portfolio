@@ -7,7 +7,7 @@ const Home = ({theme, setTheme}) => {
   return (
   <>
   <HomeSection theme={theme} setTheme={setTheme}/>
-  <Proyects/>
+  <Proyects theme={theme}/>
   </>
   )
 }

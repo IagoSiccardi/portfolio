@@ -1,17 +1,19 @@
 import React from 'react'
 import './proyect.css'
-import sunset from '../../Assets/sunset.png'
+import {FaGithub} from 'react-icons/fa'
 
-const Proyect = () => {
+const Proyect = ({title,desc,img,git}) => {
+
   return (
     <div className='proyect-borderShadow'>
     <article className='proyect-card'>
         <div className='description'>
-            <span>Titulo del proyecto</span>
-            <p>Descripcion del proyecto</p>
+            <span>{title}</span>
+            <p>{desc}</p>
+            <a href={git} target='blank'> <FaGithub size="2rem"/> </a>
         </div>
         <div className='img-container'>
-            <img src={sunset} alt="Descripcion del proyecto" />
+            <img src={img} alt="" />
         </div>
     </article>
     </div>
