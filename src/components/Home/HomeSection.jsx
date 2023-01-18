@@ -1,11 +1,17 @@
 import React from 'react'
 import './home.css'
 import {HashLink} from 'react-router-hash-link';
+import {FaMoon,FaSun} from 'react-icons/fa'
 
 
-const HomeSection = () => {
+const HomeSection = ({theme,setTheme}) => {
   return (
-    <section className='home-section'>
+    <section className={`home-section ${theme ? 'bgLight' : 'bgDark'}`}>
+        <div className='switch' onClick={() => setTheme(!theme)}>
+          <input type="checkbox"/>
+          <button className={theme ? 'left' : 'right'} />
+          {theme ? <FaSun className='sun'/> : <FaMoon className='moon'/>}
+        </div>
         <article className='home-aboutMe'>
             <h2>Im Iago Siccardi</h2>
             <span>Full Stack developer</span>   

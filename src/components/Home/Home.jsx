@@ -3,10 +3,10 @@ import Proyects from '../Proyects/Proyects';
 import HomeSection from './HomeSection';
 
 
-const Home = () => {
+const Home = ({theme, setTheme}) => {
   return (
   <>
-  <HomeSection/>
+  <HomeSection theme={theme} setTheme={setTheme}/>
   <Proyects/>
   </>
   )
