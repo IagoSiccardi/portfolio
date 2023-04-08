@@ -10,7 +10,7 @@ const Proyect = ({title,desc,img,git}) => {
         <div className='description'>
             <span>{title}</span>
             <p>{desc}</p>
-            <a href={git} target='blank'> <FaGithub size="2rem"/> </a>
+            <a href={git} target='blank'> <FaGithub size="2rem" padding="10px"/> </a>
         </div>
         <div className='img-container'>
             <img src={img} alt="" />
