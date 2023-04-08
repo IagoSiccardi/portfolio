@@ -25,6 +25,7 @@ const Proyects = ({theme}) => {
               git={git}
               tech={tech}
               key={+i + 1}
+              theme={theme}
             />
           );
         })}

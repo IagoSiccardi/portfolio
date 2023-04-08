@@ -70,12 +70,12 @@
 }
 
 
-.home-section .switch{
+.home-section .switch {
     cursor: pointer;
     right: 50px;
     top: 50px;
     position: absolute;
-
+    z-index: 1;
 
 }
 
@@ -269,8 +269,7 @@
     .home-section .switch{
         right: 50px;
         top:50px;
-    
-    
+        position: absolute;
     }
 
 }
