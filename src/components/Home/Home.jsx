@@ -4,13 +4,16 @@ import HomeSection from './HomeSection';
 import Contact from '../Contact me/Contact';
 
 
-const Home = ({theme, setTheme}) => {
+
+const Home = ({theme, setTheme,modal, setModal}) => {
+
+
   return (
-  <>
+  <div className='p-10 lg:p-20 '>
   <HomeSection theme={theme} setTheme={setTheme}/>
   <Proyects theme={theme}/>
-  <Contact theme={theme}/>
-  </>
+  <Contact theme={theme} modal={modal} setModal={setModal}/>
+  </div>
   )
 }
 
