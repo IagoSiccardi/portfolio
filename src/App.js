@@ -8,6 +8,7 @@ function App() {
   const [theme, setTheme] = useState(false);
   const [modal, setModal] = useState(false);
 
+
   return (
     <div
       className={`transition duration-500 ${theme ? "bg-white" : "bg-black"}`}
