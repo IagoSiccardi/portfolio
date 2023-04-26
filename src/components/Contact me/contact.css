@@ -55,9 +55,9 @@
 }
 
 .contact-modal .modal {
-    border:5px solid rgba(0,255,4,1);
-    height: 50vh;
-    width: 50vw;
+    border: 5px solid rgba(0,255,4,1);
+    height: 70vh;
+    width: 85vw;
     position: relative;;
 
 }
@@ -70,6 +70,7 @@
 }
 
 .contact-modal .modal form {
+    font-size: 80%;
     display: grid;
     place-items: center;
     align-content: center;
@@ -77,12 +78,32 @@
     height:100%;
 }
 
+.contact-modal .modal form .form-input{
+    border: 3px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    
+}
+
+.contact-modal .modal form .form-input:focus {
+    outline: none;
+}
+
+.contact-modal .modal form input:first-child {
+    border-color: rgb(255, 0, 128);
+}
+
+.contact-modal .modal form input:nth-child(2) {
+    border-color: rgb(255, 0, 85);
+}
+
 .contact-modal .modal form .text-area {
     border: 3px solid rgb(255, 0, 0);
-    padding: 10px 20px;
+    padding: 10px 10px;
     resize: none;
     transition: .5s ease;
-    text-transform: uppercase;
+    width: 80%;
 }
 
 .contact-modal .modal form .text-area:focus {
@@ -98,3 +119,46 @@
     width: 30%;
 }
 
+
+
+ @media (min-width:500px) {
+    
+    .contact-modal .modal {
+        height: 60vh;
+        width: 65vw;
+    }
+
+    .contact-modal .modal form .text-area {
+        width: 60%;
+    }
+
+    .contact-modal .modal form .form-input{
+        width: 60%;
+    }
+
+ }
+
+
+@media (min-width:768px) {
+
+    .contact-modal .modal form {
+        font-size: 100%;
+    }
+
+    .contact-modal .modal {
+        height: 60vh;
+        width: 50vw;
+    }
+
+    .contact-modal .modal form .text-area {
+        width: 60%;
+    }
+
+    .contact-modal .modal form .form-input{
+        width: 60%;
+    }
+}
+
+@media (min-width:1080px) {
+
+}
