@@ -2,7 +2,7 @@
 ### [Sitio Web](iagosiccardi.netlify.app)
 
 
-***Breve pagina mostrando algunos proyectos, con la posibilidad de enviarme un correo gracias a la API de EmailJS ***
+***Breve pagina mostrando algunos proyectos, con la posibilidad de enviarme un correo gracias a la API de EmailJS***
 ## Inicializar proyecto.
 
 1) Clonar el proyecto en la carpeta deseada con el comando `https://github.com/IagoSiccardi/musicHub.git`
