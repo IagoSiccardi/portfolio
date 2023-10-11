@@ -1,0 +1,70 @@
+.container {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+
+.container .sarabiImg {
+    object-fit: cover;
+    filter: drop-shadow(8px 12px 3px rgba(0, 0, 0, 0.897));
+    transition: .5s ease;
+}
+
+.container .sarabiImg:hover {
+    transform: scale(1.02);
+}
+
+.container .onHover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 130px;
+    gap: 10px;
+    border: 3px dotted rgb(38, 0, 255);
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    top: -215px;
+    right: -155px;
+    opacity: 0;
+    transition: .5s ease;
+    font-size: .9rem;
+    border-radius: 15px;
+    
+}
+
+.container .onHover::after {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px dotted blue;
+    content: " ";
+    height: 15px;
+    top: 35px;
+    left: -15px;
+    position: absolute;
+    width: 15px;
+    z-index: 10;
+}
+
+.container:hover .onHover {
+    opacity: 1;
+}
+
+.container .onHover svg {
+    font-size: 1.4rem;
+}
+
+
+@media (min-width:500px) {
+    .container .onHover {
+        
+        padding: 5px;
+        width: 145px;
+        gap: 10px;
+        top: -230px;
+        right: -170px;
+        
+    }
+}

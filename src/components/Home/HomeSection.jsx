@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import {HashLink} from 'react-router-hash-link';
 import {FaMoon,FaSun} from 'react-icons/fa'
+import Sarabi from './PixelArt/Sarabi';
 
 
 const HomeSection = ({theme,setTheme}) => {
@@ -15,8 +16,8 @@ const HomeSection = ({theme,setTheme}) => {
         <article className='home-aboutMe'>
             <h2>Im Iago Siccardi</h2>
             <span>Full Stack developer</span>   
+        <Sarabi className='sarabi'/>  
         </article>
-          
         <HashLink to="#proyects" className='slide-button animate__animated animate__slideInDown'>
           <span>S</span><span>l</span><span>i</span><span>d</span><span>e</span><span className="material-symbols-outlined arrow">arrow_downward</span>
         </HashLink>

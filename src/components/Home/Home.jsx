@@ -9,7 +9,7 @@ const Home = ({theme, setTheme,modal, setModal}) => {
 
 
   return (
-  <div className='p-10 lg:p-20 '>
+  <div className='p-5 lg:p-20 '>
   <HomeSection theme={theme} setTheme={setTheme}/>
   <Proyects theme={theme}/>
   <Contact theme={theme} modal={modal} setModal={setModal}/>
